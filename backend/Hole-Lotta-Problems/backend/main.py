@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.api import reports, heatmap, dashboard, health
-from backend.utils.config import settings
+from api import reports, heatmap, dashboard, health
+from utils.config import settings
 
 app = FastAPI(
     title="Hole Lotta Problems API",

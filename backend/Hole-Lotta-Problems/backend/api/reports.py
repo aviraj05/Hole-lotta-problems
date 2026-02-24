@@ -1,8 +1,8 @@
 from fastapi import APIRouter, UploadFile, File, Form
 from pydantic import BaseModel
 from typing import Optional
-from backend.services.detection import run_detection
-from backend.services.clustering import cluster_reports
+from services.detection import run_detection
+from services.clustering import cluster_reports
 
 router = APIRouter()
 

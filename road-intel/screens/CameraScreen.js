@@ -8,7 +8,7 @@ import { theme } from '../themes';
 
 // CHANGE THIS TO YOUR COMPUTER'S LOCAL IP ADDRESS (e.g., '192.168.x.x') 
 // Do NOT use 'localhost' or '127.0.0.1' because the Expo app runs on your phone's network
-const BACKEND_URL = 'http://192.168.1.11:8000/api/reports/submit';
+const BACKEND_URL = 'http://192.168.1.9:8000/api/reports/submit';
 
 const { width, height } = Dimensions.get('window');
 

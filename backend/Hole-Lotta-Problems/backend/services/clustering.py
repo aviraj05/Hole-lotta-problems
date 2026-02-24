@@ -2,7 +2,7 @@ from sentence_transformers import SentenceTransformer
 from sklearn.cluster import DBSCAN
 import numpy as np
 from groq import Groq
-from backend.utils.config import settings
+from utils.config import settings
 
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
 groq_client = Groq(api_key=settings.GROQ_API_KEY)

@@ -2,7 +2,7 @@ import io
 import uuid
 from PIL import Image
 from ultralytics import YOLO
-from backend.utils.config import settings
+from utils.config import settings
 
 # Severity mapping from YOLO class IDs
 SEVERITY_MAP = {

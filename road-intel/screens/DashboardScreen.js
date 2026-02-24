@@ -5,7 +5,7 @@ import axios from 'axios';
 import { theme } from '../themes';
 import { ShieldAlert, AlertTriangle, AlertCircle } from 'lucide-react-native';
 
-const BACKEND_URL = 'http://192.168.1.11:8000/api/heatmap/data';
+const BACKEND_URL = 'http://192.168.1.9:8000/api/heatmap/data';
 
 // Standard dark theme Google Maps style
 // Realistically, we'd use Mapbox, but react-native-maps with custom styling is faster for prototype
