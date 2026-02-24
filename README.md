@@ -171,6 +171,7 @@ DEVICE=cuda  # or rocm for AMD deployment
 | Aviraj Sinha , Abhinandan Singh | Backend + ML |
 | Aviraj Sinha | Mobile (React Native) |
 | Abhinandan Singh | CV Model + AMD ROCm |
+| Abhinav Bisht | Frontend Design, PowerPoint Presentation, Product Refinement |
 
 ---
 
