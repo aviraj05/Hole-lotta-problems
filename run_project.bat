@@ -12,7 +12,7 @@ start cmd /k "title FastAPI Backend && cd backend\Hole-Lotta-Problems\backend &&
 echo.
 echo Starting Expo React Native Mobile App
 echo ---------------------------------------------------
-start cmd /k "title React Native Frontend && cd road-intel && npm start"
+start cmd /k "title React Native Frontend && cd road-intel && if not exist node_modules\ (echo Installing dependencies... && npm install) && npm start"
 
 echo.
 echo ===================================================
