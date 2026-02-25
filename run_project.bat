@@ -7,12 +7,12 @@ echo ===================================================
 echo.
 echo Starting FastAPI Backend API on port 8000 (Local Network)
 echo ---------------------------------------------------
-start cmd /k "title FastAPI Backend && cd backend\Hole-Lotta-Problems\backend && uvicorn main:app --host 0.0.0.0 --port 8000"
+start cmd /k "title FastAPI Backend && cd backend && uvicorn main:app --host 0.0.0.0 --port 8000"
 
 echo.
 echo Starting Expo React Native Mobile App
 echo ---------------------------------------------------
-start cmd /k "title React Native Frontend && cd road-intel && if not exist node_modules\ (echo Installing dependencies... && npm install) && npm start"
+start cmd /k "title React Native Frontend && cd frontend && if not exist node_modules\ (echo Installing dependencies... && npm install) && npm start"
 
 echo.
 echo ===================================================

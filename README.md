@@ -72,22 +72,14 @@ Hole Lotta Problems is an AI-powered Urban Road Intelligence Platform that:
 
 ```
 hole-lotta-problems/
-├── model/
-│   ├── train/          # YOLOv8 training scripts
-│   ├── inference/      # Inference pipeline
-│   └── utils/          # Preprocessing, augmentation
-├── backend/
-│   ├── api/            # FastAPI routes
-│   ├── services/       # Business logic (detection, clustering, bot)
-│   └── utils/          # Helpers
-├── mobile/             # React Native app
+├── backend/            # FastAPI routes, services, helpers
+├── frontend/           # React Native mobile app
+├── ml/                 # YOLOv8 models, datasets, training scripts, runs
 ├── bot/                # Twitter bot scripts
-├── notebooks/          # Experimentation & EDA
+├── scripts/            # Utility scripts (testing, deps, generators)
 ├── docs/               # Architecture diagrams, assets
-├── data/
-│   ├── raw/            # Raw image datasets
-│   └── processed/      # Preprocessed data
 ├── requirements.txt
+├── run_project.bat
 ├── .env.example
 └── README.md
 ```
@@ -129,7 +121,7 @@ uvicorn main:app --reload
 ### Mobile Setup
 
 ```bash
-cd mobile
+cd frontend
 npm install
 npx expo start
 ```
@@ -156,7 +148,7 @@ TWITTER_ACCESS_SECRET=
 GROQ_API_KEY=
 
 # AMD / Model
-MODEL_PATH=model/weights/yolov8_pothole.pt
+MODEL_PATH=ml/model/weights/yolov8_pothole/weights/best.pt
 DEVICE=cuda  # or rocm for AMD deployment
 ```
 
