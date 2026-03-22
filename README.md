@@ -164,7 +164,7 @@ DEVICE=cuda  # or rocm for AMD deployment
 
 ## Team
 
-**Hole Lotta Problems** — Built at [Hackathon Name]
+**Hole Lotta Problems** — Built at AMD Slingshot
 
 | Name | Role |
 |------|------|
